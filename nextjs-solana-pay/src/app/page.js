@@ -24,7 +24,7 @@ function blobToBase64(blob) {
 export default function Home() {
   // Estados
   const [form, setForm] = useState({
-    recipient: "9Luc12KxoUfmEWSQoBbrprPqU76kfrQXkKUsZWoFY59G", // Address receptora
+    recipient: "", // Address receptora
     amount: new BigNumber("0"), // Cantidad a Recibir
     reference: new Keypair().publicKey, // Referencia que usara la blockchain para rastrear la transaccion
     label: "", // Opcional: Nombre de tienda, persona o app que genero la solicitud.
