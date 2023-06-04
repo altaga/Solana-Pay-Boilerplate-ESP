@@ -51,7 +51,7 @@ export default function Home() {
     };
     // Sustraemos solo los parametros necesarios para que la funcion encodeURL cree nuestro url
     let { recipient, amount, reference, label, message, memo } = temp;
-    // Creamos nuestro URL de pago de solana pay
+    // Creamos nuestro URL de pago de solana pay con esta funcion, directamente desde la libreria de Solana Pay SDK
     const url = encodeURL({
       recipient,
       amount,
